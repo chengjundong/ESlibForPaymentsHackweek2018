@@ -2,6 +2,8 @@ package com.ebay.payments.hackweek.pojo;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * Mapping to the document of elastic search index: item_test2.
  * 
@@ -30,6 +32,7 @@ public class ItemInfo implements Serializable {
 
 	private static final long serialVersionUID = -3748018479564552698L;
 
+	@JsonIgnore
 	private String tag;
 	private Long lineItemId;
 	private Long categoryId;
